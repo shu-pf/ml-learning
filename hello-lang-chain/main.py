@@ -52,7 +52,7 @@ def main():
     # ローカルモデルの場合: "ollama:llama3" など
     
     # モデルを初期化
-    model = init_chat_model("gpt-4o")  # または使用したいモデル名
+    model = init_chat_model("claude-sonnet-4-5-20250929")  # または使用したいモデル名
     
     # エージェントを作成
     agent = create_agent(
