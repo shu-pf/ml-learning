@@ -1,0 +1,10 @@
+[project]
+name = "hello-fast-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]>=0.128.0",
+    "typing>=3.10.0.0",
+]

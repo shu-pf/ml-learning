@@ -1,2 +1,4 @@
 # direnv環境変数ファイル
 .envrc
+
+__pycache__
