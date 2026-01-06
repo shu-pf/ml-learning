@@ -4,17 +4,15 @@ from langchain_openai import ChatOpenAI
 
 llm = ChatOpenAI(model="gpt-4o-mini")
 
+
 def mock_llm(state: MessagesState):
     return {"messages": [AIMessage(content="hello world")]}
 
+
 def llm_call(state: MessagesState):
     return {
-        "messages": [
-            llm.invoke(
-                state["messages"]
-            )
-        ],
-        "llm_calls": state.get('llm_calls', 0) + 1
+        "messages": [llm.invoke(state["messages"])],
+        "llm_calls": state.get("llm_calls", 0) + 1,
     }
 
 
